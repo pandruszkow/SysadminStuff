@@ -1,0 +1,12 @@
+IntelliJ keymap overrides:
+
+Redo: Ctrl-Y
+Back: Alt-left
+Close: Ctrl-F4, Ctrl-W
+Delete line: Ctrl-K
+Editor Select Word (broaden selection): Ctrl-*
+Editor UnSelect Word (narrow down selection): Ctrl-Shift-*
+Forward: Alt-right
+Full screen: F11
+Quick JavaDoc preview: F1
+Toggle Distraction-free full screen (macro): Shift-F11

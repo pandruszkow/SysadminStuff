@@ -1,0 +1,44 @@
+=============== BEGIN MAIN LICENSE BLOCK ==================
+
+The content in this repo is governed by the terms of the MIT license as described
+below, until midnight on January 1, 2035, UTC (2035-01-01T00:00+0000).
+
+After that point in time, all content which is both present in this repo AND 
+for which I am the sole copyright owner, may be modified and redistributed under 
+the terms of [Creative Commons CC0 v1.0 Universal license]
+(https://creativecommons.org/publicdomain/zero/1.0/) or any later version. 
+
+NOTE ON THIRD-PARTY COPYRIGHTED CONTENT: Some content in this repo may be
+already covered by somebody else's copyright (this may or may not include 
+one-liner code snippets). The timed CC0 release block above DOES NOT apply to
+this content, and it may be covered by a license different to the MIT license.
+Please check the license before use. A good place to look first are the 
+attribution notices in the file comments, and commit messages.
+
+================ BEGIN MAIN LICENSE BLOCK ===================
+
+=========================== BEGIN MIT LICENSE BLOCK =============================
+
+MIT License
+
+Copyright (c) 2017 Piotr Andruszków
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+============================ END MIT LICENSE BLOCK ==============================
