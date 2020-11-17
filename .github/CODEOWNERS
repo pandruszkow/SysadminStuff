@@ -1,0 +1,3 @@
+# Workaround to have force push protection work while still allowing me to approve my own MRs 
+# (see https://github.community/t/do-not-require-owner-approval-if-the-pull-request-is-from-an-owner/369)
+* @pandruszkow
