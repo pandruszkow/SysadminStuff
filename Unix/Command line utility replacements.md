@@ -14,7 +14,7 @@ Replace with exa
 
 # git
 
-Not technically a legacy utility, but the usage model is very complex. It's far better to use an extensive set of aliases, such as mine <link here>. 
+Not technically a legacy utility, but the usage model is very complex. It's far better to use an extensive set of aliases, [such as mine](https://github.com/pandruszkow/gitconfigure)
 
 # bash
 
