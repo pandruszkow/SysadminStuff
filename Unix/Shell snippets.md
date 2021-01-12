@@ -1,6 +1,15 @@
-List all open ports and applications listening on them
+List all open ports and applications listening on them (TCP)
 ===========================================================
-`netstat -tulpn`
+To view all TCP-attached processes along with their PIDs, run:
+
+    sudo ss -tnlp
+    
+Omitting the `sudo` elevation will mean that the PID/process names will be invisible for some of the services (those running as the system user). 
+
+
+**For legacy Linux systems:** `ss` may be unavailable. Try the below `netstat` command instead (`netstat` is obsolete on modern Linux systems, per its manpage): 
+    
+    netstat -tulpn
 
 (Thanks, [tecadmin.net](https://tecadmin.net/setup-mail-forwarding-in-postfix-on-linux/)!)
 
