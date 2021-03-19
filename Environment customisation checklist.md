@@ -15,10 +15,12 @@ Desktop
 - Utility programs installed
   - 7-Zip (sane+compatible compression)
   - WinMerge (or work-alike)
-  - WinDirStat (or work-alike)
-  - PuTTY (Linux access, TODO find something better)
-  - WinSCP (Linux access)
+  - WinDirStat (or work-alike, QDirStat on Linux)
+  - MobaXterm (Linux access)
+  - WinSCP (Linux access - todo: is this obsolete?)
   - Python 3 (generic scripting)
+  - Git for Windows (git, Unix utilities on Windows)
+  - jq (JSON parsing)
   
 ~~- Keybase installed to be able to sync personal but company-related data (invoices for reimbursed items, payslips,...)~~
   - note: Keybase isn't healthy any more, so 
