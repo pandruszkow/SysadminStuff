@@ -1,4 +1,9 @@
 # Postgres tips and tricks
+
+## Desktop client (better than pgAdmin 4)
+
+[DBeaver Community](https://dbeaver.io/) does a fantastic job of being a nicer Postgres GUI. It's a bit slow on virtual machines over X11 forwarding, but the native OS version runs smoothly. It's free for commercial use too.
+
 ## Increase the number of connections
 
 1. Run the following command using `psql`:
