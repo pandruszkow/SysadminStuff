@@ -20,6 +20,8 @@ INSERT INTO persons (lastname,firstname) VALUES ('Smith', 'John') RETURNING id;
 
 Last one is probably cleanest option.
 
+(original src: https://stackoverflow.com/questions/2944297/postgresql-function-for-last-inserted-id)
+
 ---
 
 Selecting where number is not given:
