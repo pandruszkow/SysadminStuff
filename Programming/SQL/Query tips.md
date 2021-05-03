@@ -19,3 +19,9 @@ INSERT INTO persons (lastname,firstname) VALUES ('Smith', 'John') RETURNING id;
 
 
 Last one is probably cleanest option.
+
+---
+
+Selecting where number is not given:
+
+`WHERE blah IS NULL`
