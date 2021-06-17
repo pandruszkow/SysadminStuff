@@ -9,4 +9,4 @@ Variable name | Meaning
 `%~dp0`       | (d)rive and (p)ath to the script, but with the filename omitted.<br>Equivalent to ```dirname `pwd`/filename.txt``` on Linux.
 `%cd%`        | the current working directory
 
-More variables here (and this site looks like a good resource in general): https://ss64.com/nt/syntax-variables.html
+(Source: https://ss64.com/nt/syntax-args.html/. This site looks like a good resource in general.)
