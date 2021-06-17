@@ -10,3 +10,7 @@ Variable name | Meaning
 `%cd%`        | the current working directory
 
 (Source: https://ss64.com/nt/syntax-args.html and https://ss64.com/nt/syntax-variables.html. This site looks like a good resource in general.)
+
+If/then
+---
+See http://steve-jansen.github.io/guides/windows-batch-scripting/part-5-if-then-conditionals.html for a good overview.
