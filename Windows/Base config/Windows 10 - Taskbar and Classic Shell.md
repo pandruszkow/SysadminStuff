@@ -17,7 +17,6 @@ My personal configuration:
   - Show recent or frequent programs
     - Show recent Metro apps: `Off`
   - Shutdown command: `Lock`
-  - Show Start screen shortcut: `Off`
   
 **Search Box**
   - Search programs and settings
@@ -52,6 +51,7 @@ Taskbar settings:
 - `Turn system icons on or off` ->
   - Input indicator: `Off` (not necessary if switching to Polish keyboard layout permanently)
   - Action Centre: `Off` (oh, how I hate this thing)
+  - Meet Now: `Off`
 
 Tray icons:
  - Visible: Outlook, battery indicator, Communicators, volume control
