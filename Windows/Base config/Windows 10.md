@@ -1,6 +1,29 @@
+Taskbar
+=======
+Hidden in right-click menu:
+  - Cortana (`Cortana -> Hidden`)
+  - Task View button
+  - People button
+
+Taskbar settings:
+- Peek preview: `On`
+- Location: `Bottom`
+- `Turn system icons on or off` ->
+  - Input indicator: `Off` (not necessary if switching to Polish keyboard layout permanently)
+  - Action Centre: `Off` (oh, how I hate this thing)
+  - Meet Now: `Off`
+
+Tray icons:
+ - Visible: Outlook, battery indicator, Communicators, volume control
+ - Hidden: pointless driver/third-party vendor tray icons
+ - Hidden: all rarely used icons
+
+
 Start Menu
 ==========
 The default Start Menu can be successfully replaced with [Classic Shell](http://www.classicshell.net/). This avoids the hassle of dealing with tiles that appear and re-appear for some reason after deletion, and brings back a more familiar Start Menu (if this is what you're looking for).
+
+TODO update this to use Open Shell
 
 My personal configuration:
 ----------------------------------------------------------------------
@@ -38,23 +61,18 @@ My personal configuration:
   - Run: `Display this item`
   - Windows security: `Display this item`
 
-Taskbar
-=======
-Hidden in right-click menu:
-  - Cortana (`Cortana -> Hidden`)
-  - Task View button
-  - People button
+Tweak sound scheme
+==================
 
-Taskbar settings:
-- Peek preview: `On`
-- Location: `Bottom`
-- `Turn system icons on or off` ->
-  - Input indicator: `Off` (not necessary if switching to Polish keyboard layout permanently)
-  - Action Centre: `Off` (oh, how I hate this thing)
-  - Meet Now: `Off`
+- Change UAC and warning sound to something snappier
 
-Tray icons:
- - Visible: Outlook, battery indicator, Communicators, volume control
- - Hidden: pointless driver/third-party vendor tray icons
- - Hidden: all rarely used icons
- 
+Disable unneeded animations
+===========================
+
+Follow https://support.microsoft.com/en-us/office/turn-off-office-animations-9ee5c4d2-d144-4fd2-b670-22cef9fa025a
+
+
+Recommendations
+===============
+
+Bullet point links to each common Windows facet that needs to be configured that's non-core
