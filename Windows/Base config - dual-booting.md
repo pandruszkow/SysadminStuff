@@ -1,3 +1,5 @@
+#  Dual-booting with Linux or another OS
+
 ## Disable Fast start-up in Windows 10
 
 Dual booting often needs to allow reading Windows data from Linux In "fast start-up" mode, Windows will restart the system and hibernate instead of just shutting down, thus keeping the NTFS partition "in use" and potentially triggering weird hardware states that your computer or hypervisor may not recover from.
