@@ -1,13 +1,24 @@
 Taskbar
 =======
 
-Remove superfluous taskbar items as follows, using taskbar's right-click menu:
+Remove superfluous taskbar items as follows:
 
+Using taskbar's right-click menu:
 * Cortana: `Show Cortana button` (untick)
 * Search: `Search ➞ Hidden` (select)
 * Task View: `Show Task View button` (untick)
 * People: `Show People on the taskbar` (untick)
 * News and interests (news and weather): `News and interests ➞ Turn off` (select)
+
+By unpinning:
+* Microsoft Edge
+* Chrome (if applicable)
+
+Pin necessary taskbar items as follows:
+* Outlook
+* Firefox
+* Explorer
+* Vivaldi
 
 Enable useful features and configure miscellanea, in `right-click menu ➞ Taskbar settings`:
 * Peek preview: `On`
