@@ -1,23 +1,26 @@
 Taskbar
 =======
-Hidden in right-click menu:
-  - Cortana (`Cortana -> Hidden`)
-  - Task View button
-  - People button
 
-Taskbar settings:
-- Peek preview: `On`
-- Location: `Bottom`
-- `Turn system icons on or off` ->
-  - Input indicator: `Off` (not necessary if switching to Polish keyboard layout permanently)
-  - Action Centre: `Off` (oh, how I hate this thing)
-  - Meet Now: `Off`
+Remove superfluous taskbar items as follows, using taskbar's right-click menu:
 
-Tray icons:
- - Visible: Outlook, battery indicator, Communicators, volume control
+* Cortana: `Show Cortana button` (untick)
+* Search: `Search ➞ Hidden` (select)
+* Task View: `Show Task View button` (untick)
+* People: `Show People on the taskbar` (untick)
+* News and interests (news and weather): `News and interests ➞ Turn off` (select)
+
+Enable useful features and configure miscellanea, in `right-click menu ➞ Taskbar settings`:
+* Peek preview: `On`
+* Location: `Bottom`
+* Notification area ➞ `Select which icons appear on the taskbar` (aka system tray icons):
+ - Visible: Outlook, battery indicator, OneDrive, connectivity (VPN clients), Communicators, volume control
  - Hidden: pointless driver/third-party vendor tray icons
  - Hidden: all rarely used icons
-
+* Notification area ➞ `Turn system icons on or off`:
+  * Input indicator: `Off` (not necessary if switching to Polish keyboard layout permanently)
+  * Action Centre: `Off` (oh, how I hate this thing)
+  * Location: `Off` (this should be disabled anyhow, so no need to see its status)
+  * Meet Now: `Off`
 
 Start Menu
 ==========
