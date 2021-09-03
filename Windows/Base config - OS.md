@@ -24,9 +24,7 @@ Enable useful features and configure miscellanea, in `right-click menu ➞ Taskb
 
 Start Menu
 ==========
-The default Start Menu can be successfully replaced with [Classic Shell](http://www.classicshell.net/). This avoids the hassle of dealing with tiles that appear and re-appear for some reason after deletion, and brings back a more familiar Start Menu (if this is what you're looking for).
-
-TODO update this to use Open Shell
+The default Start Menu can be successfully replaced with [Open-Shell](https://github.com/Open-Shell/Open-Shell-Menu/releases), formerly known as [Classic Shell](http://www.classicshell.net/). This avoids the hassle of dealing with tiles that appear and re-appear for some reason after deletion, and brings back a faster, more familiar Start Menu (if this is what you're looking for).
 
 My personal configuration:
 ----------------------------------------------------------------------
@@ -67,7 +65,7 @@ My personal configuration:
 Tweak sound scheme
 ==================
 
-- Change UAC and warning sound to something snappier
+- Change UAC and warning sound to something snappier. 'chord' is recommended.
 
 Disable unneeded animations
 ===========================
