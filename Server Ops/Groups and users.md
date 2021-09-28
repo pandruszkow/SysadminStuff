@@ -26,3 +26,5 @@ Print information about when the password expires:
 ```sh
 chage -l <username>
 ```
+
+(With thanks to [tecmint.com](https://www.tecmint.com/force-user-to-change-password-next-login-in-linux/))
