@@ -4,3 +4,6 @@ Summary: since Firefox 68, the ESR release is configured to do that automaticall
 
 For details, see https://serverfault.com/a/821200
 
+Another way to do this may be (not tested by me):
+
+https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox
