@@ -6,7 +6,9 @@ Add the user to the groups according to the table below:
 |------------|-------------|
 |`kvm`<br> `libvirt`|Virtualisation (KVM, Virt-Manager)|
 
+## Add a user to a group
 
+`gpasswd -a <username> <group name>`
 
 ## Initialise a user on Linux
 
@@ -14,7 +16,13 @@ Use `adduser`.
 
 ## Force password change on next login for a user
 
-For username `user123`, run the following commands as root or as the target user to:
+Force user to change password on next login:
 
-* Force the password change: `passwd --expire user123`
-* Print information about when the password expires: `chage -l user123`
+```sh
+passwd --expire <username>
+```
+
+Print information about when the password expires:
+```sh
+chage -l <username>
+```
