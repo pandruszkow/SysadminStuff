@@ -13,3 +13,5 @@ aws s3api head-object --bucket <bucket name> --key <object key within bucket>; e
 jq -r '(map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' < input-file.json  >output-file.csv
 ```
 7. The resulting CSV can be easily imported in LibreOffice Calc for browsing.
+
+(The source for the expression in step 6 is https://stackoverflow.com/a/32965227)
