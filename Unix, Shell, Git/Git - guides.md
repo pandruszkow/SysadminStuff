@@ -1,3 +1,11 @@
+# Removing data from history after the fact
+
+To retroactively erase all history of a particular directory ever existing in your repo's history, run the command below:
+
+`git filter-branch --tree-filter 'rm -rf <directory>' --prune-empty HEAD`
+
+The same method works for files too.
+
 # Rebasing
 
 Rebasing the first commit
