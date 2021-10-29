@@ -4,7 +4,9 @@ To retroactively erase all history of a particular directory ever existing in yo
 
 `git filter-branch --tree-filter 'rm -rf <directory>' --prune-empty HEAD`
 
-The same method works for files too.
+The same method works for files too. There are other, safer methods for doing this, but they may not be available if installation of additional software is not permitted, or if there is a requirement to use an older version of Git. For example, the `git filter-repo` command will not work on the latest version of Git available from the official software repos for Ubuntu 18.04 LTS.
+
+(src: https://stackoverflow.com/a/33493108)
 
 # Rebasing
 
