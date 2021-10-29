@@ -30,6 +30,14 @@ Git will now go through each fragment of the file that's been changed and show y
 
 # Cloning
 
+## Shallow clone
+
+Sometimes, you are only checking out a repo so you can deploy a piece of software, or build something, but won't ever do dev work on it. In that case, cloning the entire repo history is pointless. Change your `git clone` command as follows:
+
+`git clone <repo_url> [<target_directory>]` -> `git clone <repo_url> [<target_directory>] --depth=1`
+
+This will ensure you're only transferring as much data as is required to reconstitute the repo contents at the latest commit, without any history. As a bonus, if the repo used to contain large files that were subsequently erased, you won't have to sit around waiting for them to transfer.
+
 ## Customise cloning destination
 
 By running the clone command as `git clone <repo URL> <destination directory>`, you can control where your cloned repo ends up. The path can be relative or absolute, and the destination directory will be created if not present.
