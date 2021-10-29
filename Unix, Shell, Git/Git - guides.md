@@ -16,7 +16,7 @@ To rebase the first commit of your repo (to edit the commit message, etc.), run 
 (With thanks to torek at https://stackoverflow.com/a/23000315)
 
 
-#Staging
+# Staging
 
 ## Selective staging of changes
 If you have made changes in more than one part of a file, Git will also allow you to select which ones go into the staging area. Simply run the command as follows:
