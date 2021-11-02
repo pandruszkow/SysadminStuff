@@ -49,6 +49,6 @@ You can set permissions for multiple triads at once. Simply write out what you w
 
 #### Special permissions:
 
-- Sticky bit: todo
+- Sticky/SUID (setuid)/setgid bit: todo (see blog post at https://dougvitale.wordpress.com/2013/02/16/linux-file-permissions-and-chmod/)
 - e`X`ecute but only for directories: `chmod a+X -R directory`
   - this comes in handy when rescuing directories that were clobbered with a bad `chmod` command. Upper-case `X` will set the execute bit only on directories but leave it as-is on files, unlike lower-case `x` that will give an execute bit to everything (which is rarely the desirable outcome).
