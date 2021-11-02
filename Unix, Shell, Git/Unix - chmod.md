@@ -44,7 +44,8 @@ To change each triad's value, specify the letter for the triad, then whether you
 
 You can set permissions for multiple triads at once. Simply write out what you wish to do for each triad as above, separating each item with a `,`. Triads can be grouped into one item too: to operate on `u`ser and `g`group at once, write it out as `ug..`.
 
-- Give owner execute permission, set group and other to read-write: `chmod u+x,go=rw`
+- Give owner execute permission, set group and other to read-write: `chmod u+x,g=rw,o=rw`
+  - With the group and other triads combined (but with the same result): `chmod u+x,go=rw`
 
 #### Special permissions:
 
