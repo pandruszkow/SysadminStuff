@@ -2,6 +2,8 @@
 
 You have a Windows C: drive using the NTFS file system. You would like to move all or some of the data to a brand-new ext4 partition on the same drive, but you don't have a spare hard drive to store the data while you're working with the partitions.
 
+**exFAT, WILL NOT WORK WITH THIS GUIDE.** It cannot shrink or grow at all. **XFS, JFS and UFS2** cannot be shrunk, meaning you can migrate data _to_ them, but not _from_ them, using this technique.
+
 ### Warnings
 
 0. DO NOT POWER OFF THE COMPUTER DURING STEP 9. THIS WILL DESTROY YOUR DATA.
@@ -36,4 +38,4 @@ Step 10. Use the "grow partition" feature to expand your Linux partition to the 
 
 Step 11. Repeat steps 6-10 until you moved all the data you want to the Linux partition
 
-This works for every combination of filesystems, BTW. Whether you're migrating NTFS-> ext4, or ext4->BTRFS or whatever, it will work just fine as long as you can shrink the source and grow the destination FS (only some very niche FSes cannot do that, both NTFS and ext4 can).
+This works for every combination of filesystems (or, _almost_ every combination of filesystems). Whether you're migrating NTFS-> ext4, or ext4->BTRFS or whatever, it will work just fine as long as you can shrink the source FS and grow the destination FS. 
