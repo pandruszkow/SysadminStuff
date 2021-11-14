@@ -2,7 +2,7 @@
 
 You have a Windows C: drive using the NTFS file system. You would like to move all or some of the data to a brand-new ext4 partition on the same drive, but you don't have a spare hard drive to store the data while you're working with the partitions.
 
-**exFAT, WILL NOT WORK WITH THIS GUIDE.** It cannot shrink or grow at all. **XFS, JFS and UFS2** cannot be shrunk, meaning you can migrate data _to_ them, but not _from_ them, using this technique.
+**exFAT WILL NOT WORK WITH THIS GUIDE.** It cannot shrink or grow at all. **XFS, JFS and UFS2** cannot be shrunk, meaning you can migrate data _to_ them, but not _from_ them, using this technique.
 
 ### Warnings
 
