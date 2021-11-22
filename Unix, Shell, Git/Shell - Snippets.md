@@ -53,4 +53,6 @@ The command below will recursively hash a directory, sorting it by name, and rev
 
      find . -type f -exec sha256sum '{}' + | awk '{print $2,$1}' | sort > VM_Shared_Folder/dir-index.sha256.txt
 
+Note: this may not be safe for paths that contain spaces or tabs.
+
 (Thanks, [SvennD](https://www.svennd.be/recursively-md5sha1sha256sha512-a-directory-with-files/))
