@@ -24,3 +24,7 @@ If you wish, tick the option to expose this directory as read-only.
 
 Finally: change owner and group of the directory you chose as the `Source path` to `libvirt-qemu` (or equivalent - whichever group you had to add yourself to so that you could create and launch VMs).
 **THIS IS IMPORTANT.** You **WILL** get mysterious permission-related errors unless you make sure to do so. 
+
+## Mount shared dir inside the guest VM
+
+https://www.linux-kvm.org/page/9p_virtio
