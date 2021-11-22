@@ -56,3 +56,26 @@ The command below will recursively hash a directory, sorting it by name, and rev
 Note: this may not be safe for paths that contain spaces or tabs.
 
 (Thanks, [SvennD](https://www.svennd.be/recursively-md5sha1sha256sha512-a-directory-with-files/))
+
+Remove a character from a text stream
+=====================================
+
+Scenario: you want to use the output of a command in your `$PS1`, or for some other purpose. The output ends in a newline, which must be removed so that the newline doesn't interfere with the execution of the rest of your shell script.
+
+## Solution 1: Remove all newlines
+```shell
+echo "This output contains newlines" | tr -d '\n'
+```
+Using `tr` in the `-d` (delete) mode will filter out all occurrences of the character passed in as the parameter. `\n` means the newline character.
+
+## Solution 2: Remove the last byte
+If you're certain that the last byte is a newline byte, use `head` to remove everything but the last character:
+```shell
+echo "This output contains newlines" | head -c -1
+```
+
+## Solution 3: Remove only the last newline (with Perl)
+```shell
+echo "This output contains newlines" | perl -pe 'chomp if eof'
+```
+This will remove the last (and only the last) newline from a text stream, if present.
