@@ -6,7 +6,7 @@ This is analogous to `msinfo32`, `dxdiag`, or pressing `Ctrl+PauseBreak` in Wind
 
 
 ### Display all system information (including hardware IDs)
-Superuser access is required to read certain hardware serial numbers.
+(Requires elevation to read certain hardware serial numbers)
 
 ```shell
 sudo inxi -Fx
