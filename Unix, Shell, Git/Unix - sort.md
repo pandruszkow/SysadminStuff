@@ -21,4 +21,4 @@ Given the following input (an example `/etc/fstab`):
 /dev/sda2 /data1 ext4 defaults 0 0
 ```
 
-You may sort by the second field (the mount point) using the `-k 2,2` option. For the third field, that's `-k 3,3`, and so on. Any whitespace is treated as a field separator.
+You may sort by the second field (the mount point) using the `sort -k 2,2` option. For the third field, that's `sort -k 3,3`, and so on. Any whitespace is treated as a field separator.
