@@ -45,6 +45,8 @@ Requirements:
    The command should exit when the wipe is finished, and print out how long it took.
 4. Repeat step 2, but this time check that the security status shows as `not enabled`.
 
+(Source for this section: https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase)
+
 ## Part 3 - random + zero erase with nwipe
 Launch `nwipe`, and set it up as below before kicking off the erasure process:
 
