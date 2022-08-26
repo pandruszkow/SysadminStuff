@@ -46,7 +46,7 @@ Requirements:
 4. Repeat step 2, but this time check that the security status shows as `not enabled`.
 
 ## Part 3 - random + zero erase with nwipe
-Launch nwipe, and set it up as below before kicking off the erasure process:
+Launch `nwipe`, and set it up as below before kicking off the erasure process:
 
 |Setting|Value to use for wiping|
 |-------|-----------------------|
@@ -54,3 +54,5 @@ Launch nwipe, and set it up as below before kicking off the erasure process:
 |Rounds|1 with a blanking pass|
 |Blanking|Perform a blanking pass|
 |PRNG| ISAAC-64 (unless 32-bit, in that case select the 32-bit version)|
+
+If `nwipe` is not present on your system, it can be installed with `sudo apt install nwipe`.
