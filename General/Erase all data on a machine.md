@@ -2,15 +2,16 @@
 
 Requirements: 
 - an Ubuntu live USB medium
-- an Internet connection (unless the medium comes with nwipe, or you pre-cache the required packages in advance on the USB)
+- the nwipe package from [here](https://packages.ubuntu.com/jammy/nwipe). Make sure you download the package for the same Ubuntu version as your live USB. Copy the package onto the USB alongside the Ubuntu system files so that it's easy to find.
 
 ## Part 1 - get the machine into the right state & confirm drive details
 0. Remove any drives you *do not* intend to wipe from the computer.
 1. Boot the computer.
     - You may wish to load the entire system into RAM with the `toram` boot parameter (for Debian/Ubuntu derivatives) and remove the live medium to ensure it's not accidentally wiped.
-2. Enumerate the drives to confirm which drive letter(s) the disk(s) to be wiped received from the Linux kernel. Run `lsblk`.
 3. Put the machine into sleep mode (`systemctl suspend`), and then wake it up again.
     - This step is needed to unfreeze the security on the drive, so we can set the security password.
+    - If this doesn't work, or the machine wakes up with garbled graphics on the screen, then start over with the guide while skipping Part 2.
+2. Enumerate the drives to confirm which drive letter(s) the disk(s) to be wiped received from the Linux kernel. Run `lsblk`.
 4. For each drive you intend to erase, run `hdparm -I /dev/sdX | less` to confirm:
     - the capacity, make, model (and optionally serial number) of the drive (these should be listed at the start of the output)
     - the security status. This should be listed as `not enabled`, `not locked` and `not frozen`
@@ -48,13 +49,12 @@ Requirements:
 (Source for this section: https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase)
 
 ## Part 3 - random + zero erase with nwipe
-Launch `nwipe`, and set it up as below before kicking off the erasure process:
+1. Install nwipe from the USB. You can normally do this by typing `sudo apt install ` into the terminal (note the space at the end), then drag-and-dropping the DEB file onto the terminal window and pressing Enter.
+2. Launch `nwipe`, and set it up as below before kicking off the erasure process:
 
 |Setting|Value to use for wiping|
 |-------|-----------------------|
 |Method|PRNG Stream|
 |Rounds|1 with a blanking pass|
 |Blanking|Perform a blanking pass|
-|PRNG| ISAAC-64 (unless 32-bit, in that case select the 32-bit version)|
-
-If `nwipe` is not present on your system, it can be installed with `sudo apt install nwipe`.
+|PRNG| ISAAC-64 (if available - if it isn't, or if you're wiping on a 32-bit machine, then you may use `ISAAC` instead)|
