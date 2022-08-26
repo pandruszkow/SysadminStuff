@@ -1,6 +1,8 @@
 # Standard procedure for wiping a machine in Linux
 
-Requirements: an Ubuntu live USB medium, an Internet connection (unless you pre-cache the required packages in advance on the USB)
+Requirements: 
+- an Ubuntu live USB medium
+- an Internet connection (unless the medium comes with nwipe, or you pre-cache the required packages in advance on the USB)
 
 ## Part 1 - get the machine into the right state & confirm drive details
 0. Remove any drives you *do not* intend to wipe from the computer.
