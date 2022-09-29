@@ -10,7 +10,7 @@ Assuming that changes were made to `aws_instance.example`, but also a number of 
 
     terraform apply -target=aws_instance.example
     
-Take care not to use this too often, or you risk putting your Terraform state into something undefined (or perhaps even dependency cycles) that's hard to recover from.
+Take care not to use this too often, or you risk putting your Terraform state into something undefined (or perhaps even risk creating dependency cycles) that's hard to recover from.
 
 ## Mark an object for replacement
 
