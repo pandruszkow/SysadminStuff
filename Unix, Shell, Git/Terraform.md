@@ -4,6 +4,14 @@ Made up of two components: the type, and the name.
 
 So an `aws_instance` named `jumphost` would be identified by `aws_instance.jumphost` in all subsequent references from the tf file and from the command line
 
+## Apply a Terraform change only to selected objects
+
+Assuming that changes were made to `aws_instance.example`, but also a number of other resources, you can selectively apply changes to just `aws_instance.example` by running:
+
+    terraform apply -target=aws_instance.example
+    
+Take care not to use this too often, or you risk putting your Terraform state into something undefined (or perhaps even dependency cycles) that's hard to recover from.
+
 ## Mark an object for replacement
 
 Use:
