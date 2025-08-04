@@ -1,4 +1,4 @@
-Assuming a standard Ubuntu sound topology (aka ALSA+PulseAudio mixers), use the following commands:
+Assuming a standard Ubuntu 20.04 sound topology (aka ALSA+PulseAudio mixers), use the following commands:
 
 Mute:
 
