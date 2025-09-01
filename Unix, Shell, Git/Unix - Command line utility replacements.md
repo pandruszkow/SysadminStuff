@@ -22,4 +22,6 @@ Replace with ZSH. Replacement instructions TODO.
 
 # ncdu
 
-Replace with [gdu](https://github.com/dundee/gdu). Bonus: this is a statically-compiled Go application, so it can be deployed in a single binary on servers with outdated OS versions.
+Replace with [gdu](https://github.com/dundee/gdu). 
+
+Bonus: this is a statically-compiled Go application, so it can be deployed in a single binary on servers with outdated OS versions.
