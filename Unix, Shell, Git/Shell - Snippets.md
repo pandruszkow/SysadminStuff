@@ -1,3 +1,22 @@
+Displaying variables with `env` shows them in alphabetical order
+===========================================================
+To configure `env` to be sorted ASCII-betically when run, add the following to your shell profile:
+```
+alias env="env | sort"
+```
+
+(Bash) (untested) Print the date and time on command execution
+===========================================================
+> [!WARNING]
+> This snippet has not been debugged to do exactly what it should.
+> 
+> Observed issues: cosmetic issues (line noise) in the terminal). No negative functional impact.
+
+Include the below in your shell profile:
+```
+trap 'date +"%F @ %T %A J-%j"' DEBUG
+```
+
 List all open ports and applications listening on them (TCP)
 ===========================================================
 To view all TCP-attached processes along with their PIDs, run:
@@ -8,7 +27,7 @@ Omitting the `sudo` elevation will mean that the PID/process names will be invis
 
 
 **For legacy Linux systems:** `ss` may be unavailable. Try the below `netstat` command instead (`netstat` is obsolete on modern Linux systems, per its manpage): 
-    
+
     netstat -tulpn
 
 (Thanks, [tecadmin.net](https://tecadmin.net/setup-mail-forwarding-in-postfix-on-linux/)!)
@@ -49,11 +68,12 @@ Type the command `echo ^G` (where `^G` is produced by typing Ctrl+G on the keybo
 
 Run a quick hashed index of the current directory
 =================================================
+> [!NOTE]
+> This may be unsafe for paths that contain spaces or tabs.
+
 The command below will recursively hash a directory, sorting it by name, and reverse the hashsum with the file path of each file. This can be used as an ad-hoc diff of two directories that can't be accessed simultaneously (like for VM snapshots). Simply run the script for each dir, then diff both output files and look for differences (missing/added lines, different hashes).
 
      find . -type f -exec sha256sum '{}' + | awk '{print $2,$1}' | sort > VM_Shared_Folder/dir-index.sha256.txt
-
-Note: this may not be safe for paths that contain spaces or tabs.
 
 (Thanks, [SvennD](https://www.svennd.be/recursively-md5sha1sha256sha512-a-directory-with-files/))
 
