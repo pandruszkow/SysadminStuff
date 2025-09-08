@@ -49,3 +49,9 @@ You can also use `.` as the destination directory, which will clone the repo con
 ## Cloning from GitHub
 
 Use the SSH URL provided to clone it read-write. Then it doesn't ask for HTTPS username/password, and uses SSH public key authentication instead.
+
+# Mac OS Bash Completion
+
+1. Find the git bash completion script in the filesystem under `/Applications`.
+2. (optional) Copy it to `~/Applications`.
+3. Edit your `~/.bash_profile` to `source` it on startup.
